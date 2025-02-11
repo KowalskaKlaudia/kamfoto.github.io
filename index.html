@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fotograficzne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moje Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">O mnie</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>O mnie</h2>
+        <p>Cześć! Jestem Klaudia, fotografką pełną pasji i kreatywności. Pomimo mojego pasjonującego podejścia do fotografii, jestem osobą wyluzowaną i z poczuciem humoru zachowując przy tym pełną profesjonalność 😉 Podczas sesji zdjęciowych staram się stworzyć przyjazną atmosferę, w której każdy czuje się swobodnie i może wyrazić swoją prawdziwą naturę. Niezależnie od tego, czy jesteś nieśmiały czy pełen energii, ja potrafię dostosować się do Twoich potrzeb i uwiecznić piękno Twojej osobowości. 
+Więc jeśli szukasz nie tylko wyjątkowych zdjęć, ale także niezapomnianego doświadczenia, to jestem fotografką, na którą możesz liczyć. Zapraszam do współpracy i do odkrywania razem magii fotografii!</p>
+    </div>
+
+    <div class="container" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Zdjęcie 1">
+            <img src="https://via.placeholder.com/300x200" alt="Zdjęcie 2">
+            <img src="https://via.placeholder.com/300x200" alt="Zdjęcie 3">
+            <img src="https://via.placeholder.com/300x200" alt="Zdjęcie 4">
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+            <label for="name">Klaudia Kowalska:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">kowalskaklaudiakatarzyna@gmail.com:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Wyślij wiadomość</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Klaudia Kowalska]. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
